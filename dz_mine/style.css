@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #fff;
+}
+
+
+table {
+  width: 100%;
+}
+
+tr {
+
+}
+
+th {
+  padding: 5px;
+  background: #3e69f4;
+  color: #fff;
+}
+
+td {
+  padding: 5px;
+}
+
+a.null {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background: #2e5ffe;
+  padding: 5px 15px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+li.active {
+  box-shadow: inset 0px 0px 0px 3px #0a30abc7;
+}

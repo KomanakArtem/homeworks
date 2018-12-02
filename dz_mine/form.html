@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Форма</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #5a6778;
+    }
+
+    .form {
+      width: 400px;
+      margin: auto;
+      margin-top: 25px;
+      background: #fff;
+      padding: 30px;
+      position: relative;
+    }
+
+    textarea:focus,
+    input:focus {
+      outline: none;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid #d4d1d1;
+      border-radius: 3px;
+      padding: 10px 0px 10px 11px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 0px 10px 11px;
+      cursor: pointer;
+      background: #f1776c;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    label {
+      font-size: 14px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .form-title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .form-footer {
+      font-size: 10px;
+      text-align: right;
+      color: #0000007a;
+    }
+      </style>
+</head>
+<body>
+  <form method="POST" action="/" class="form">
+    <div class="form-title">Анкета</div>
+
+    <div class="input-group">
+      <label>Имя:</label><br>
+      <input type="text" name="name">
+    </div>
+
+    <div class="input-group">
+      <label>Фамилия:</label><br>
+      <input type="text" name="surname">
+    </div>
+
+    <div class="input-group">
+      <label>Отчество:</label><br>
+      <input type="text" name="patronymic">
+    </div>
+
+    <div class="input-group">
+      <label>Страна происхождения:</label><br>
+      <select name="country">
+        <option value="md">Молдавия</option>
+        <option value="ru">Россия</option>
+        <option value="ukr">Украина</option>
+        <option value="ro">Румыния</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Интересы:</label><br>
+      <input type="checkbox" name="interests" value="math" id="math"> <label for="math">Математика</label><br>
+      <input type="checkbox" name="interests" value="chemistry" id="chemistry"> <label for="chemistry">Химия</label><br>
+      <input type="checkbox" name="interests" value="biology" id="biology"> <label for="biology">Биология</label><br>
+    </div>
+
+    <div class="input-group">
+      <label>Причина выбора:</label><br>
+      <textarea name="why" rows="10"></textarea>
+    </div>
+
+    <div class="input-group">
+      <input type="submit" name="submit" value="Отправить">
+    </div>    
+
+    <div class="form-footer">Команак Артём</div>
+  </form>
+</body>
+</html>
